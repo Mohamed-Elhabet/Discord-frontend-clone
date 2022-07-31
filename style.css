@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    
+    background-color: rgba(25, 25, 25);
+}
+
+.img-icons{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 8px;
+    margin-left: 15px;
+}
+
+.left-section a:first-child{
+    font-size: 3rem;
+}
+
+.hr{
+    border: 1px solid rgba(120, 118, 118, 0.2);
+    margin: 5px 20px 5px 20px;
+}
+
+.logo{
+    display: flex;
+    margin: 15px 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo i{
+    padding-left: 4px;
+}
+
+.content span{
+    color: grey;
+}
+
+
+.vertical-line{
+    display: flex;
+    font-weight: 600;
+    width: 4px;
+    height: 40px;
+    background-color: wheat;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.vertical-line{
+    margin: 0;
+    padding: 0;
+}
+
+.dot{
+    width: 3px;
+    height: 6px;
+    background-color: white;
+    border-radius: 0px 1px 1px 0px;
+}
+
+.flex-dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+}
+
+.img-icons:hover{
+    border-radius: 30%;
+}
+
+.plus:hover{
+    border-radius: 30%;
+    background-color: green;
+    color: white;
+}
+
+.plus{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 30, 40,.7);
+    margin: 8px;
+    margin-left: 15px;
+    color: green;
+}
+
+.mid-section{
+    background-color: rgba(119, 110, 110, 0.215);
+    background-color: rgba(119, 120, 130, 0.315);
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    position: fixed;
+}
+
+.mid-section .input{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(119, 110, 110, 0.215);
+    background-color: rgba(119, 120, 130, 0.315);
+    display: flex;
+}
+
+.input input{
+    display: flex;
+    width: 94%;
+    margin: auto;
+    height: 70%;
+    background-color: black;
+    margin-top:6px;
+    border-radius: 4px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+
+.hr-page{
+    border: 1px solid black;
+}
+
+.mid-section .content{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 90px;
+    margin: 4px auto;
+    
+}
+
+.content .cont{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-top:7px;
+    border-radius: 4px;
+    margin: auto;
+    align-items: center;
+}
+
+.cont a{
+    display: flex;
+    margin: 2px 15px 0px 8px ;
+}
+
+.cont span{
+    font-size: 1em;
+    font-weight: 600;
+    
+}
+
+.content .cont:hover, .friend:hover{
+    background-color: rgba(128, 128, 128,0.1);
+}
+
+.friends{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.friends .title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title span{
+    font-size: 1.7rem;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.friends .title h2{
+    display: flex;
+    font-size: 1rem;
+    margin-right: 55px;
+    color: grey;
+}
+
+.friend{
+    display: flex;
+    align-items: center;
+}
+
+.friend .img-icons{
+    width: 35px;
+    height: 35px;
+}
+
+.friend span{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: grey;
+}
+
+.user{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(41, 38, 38);
+}
+
+.user-discord{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 5px 5px;
+    position: relative;
+} 
+
+.user-details p{
+    color: white;
+}
+
+.user-discord i{
+    font-size: 22px;
+    color: white;
+}
+
+.settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: .9rem;
+}
+
+.name{
+    width: 120px;
+}
+
+.user-details h4{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: white;
+} 
+
+.settings i{
+    color: white;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.user-discord .active{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.icons-2 i{
+    color: blue;
+}
+
+.header{
+    height: 40px;
+    background-color: rgba(119, 120, 130, 0.315);
+}
+
+.icon-friend{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-1{
+    display: flex;
+    
+}
+
+.icons-1 a{
+    display: flex;
+    align-items: center;
+    margin-left:  15px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 5px;
+}
+
+.icons-1 a i{
+    display: flex;
+    margin-right: 5px;
+}
+
+
+
+.icons-1 a span{
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.ver-line{
+    display: flex;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.icon-bold{
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: green;
+    display: flex;
+    width: 55px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.icon-bold-2{
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: green;
+    display: flex;
+    width: 80px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.page{
+    position: relative;
+    margin-left: 360px;
+    width: 81%;
+    background-color: rgba(119, 120, 130, 0.315);
+}
+
+.icons-2{
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.icons-2 i{
+    margin-right: 10px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.icons-2 div{
+    margin-right: 10px;
+}
+
+.body-page{
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    height: 100vh;
+}
+
+.body-page .body-left{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    flex-direction: row;
+    background-color: rgba(1, 4, 12, 0.888);
+    height: 100vh;
+}
+
+.page .header{
+    position: sticky;
+    top: 0;
+}
+
+.wumpus i{
+    font-size: 15rem;
+    
+  padding-bottom: 40x;
+}
+
+.wumpus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40%;
+    color: grey;
+}
+
+.body-left p{
+    font-size: 0.7rem;
+    color: grey;
+    display: flex;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+
+.body-left p{
+    font-size: 1rem;
+    display: flex;
+}
+
+.body-page .body-right{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: rgba(1, 4, 12, 0.888);
+    border-left: 1px solid rgba(255, 255, 255,0.2);
+    height: 100vh;
+}
+
+.body-right h2{
+    margin: 20px 0px 10px 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.body-right h4{
+    margin: 10px auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.body-right p{
+    margin: 3px auto;
+    color: grey;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.pos{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
